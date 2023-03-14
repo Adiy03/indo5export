@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--=============== FAVICON ===============-->
+
+  <!--=============== REMIX ICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- <link rel="stylesheet" href="products/css_final.css"> -->
+
+
+  <title>5 Second Export</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $("#myInput").on("keyup", function () {
+        var value = $(this).val().toLowerCase();
+        $("#myTable tr").filter(function () {
+          $(this).toggle($(this).text().toLocaleLowerCase().indexOf(value) > -1);
+        });
+      });
+    });
+  </script>
+
+  <!-- schema.org -->
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "5 Second Export",
+      "url": "https://www.5secondexport.com",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+62-851-550-32-886",
+        "contactType": "customer service",
+        "areaServed": "ID"
+      },
+      "description": "Easily Find Indoensian Export Product In 5 Seconds
+      ",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Taman Harapan Street",
+        "addressLocality": "East Jakarta",
+        "addressRegion": "DKI Jakarta",
+        "postalCode": "13630",
+        "addressCountry": "ID"
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <!--==================== HEADER ====================-->
+  <div itemscope itemtype="http://schema.org/BreadcrumbList">
+    <header class="header" id="header">
+      <nav class="nav container">
+        <div itemscope itemtype="http://schema.org/Organization">
+          <a href="#" class="nav__logo">
+            <i class="ri-time-line"></i>
+            <h1 itemprop="name"><span class="her">Indo5Export</h1>
+          </a>
+        </div>
+
+        <div class="nav__menu" id="nav-menu" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <ul class="nav__list">
+            <li class="nav__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+              <a href="#about" class="nav__link" itemprop="item">
+                <span itemprop="name">Benefits</span>
+              </a>
+            </li>
+            <li class="nav__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+              <a href="#products" class="nav__link" itemprop="item">
+                <span itemprop="name">Products</span>
+              </a>
+            </li>
+            <li class="nav__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+              <a href="#faqs" class="nav__link" itemprop="item">
+                <span itemprop="name">FAQs</span>
+              </a>
+            </li>
+            <li class="nav__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+              <a href="#contact" class="nav__link" itemprop="item">
+                <span itemprop="name">Contact</span>
+              </a>
+            </li>
+
+          </ul>
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <div class="nav__btns">
+          <!-- <i class="ri-moon-line change-theme" id="theme-button"></i> -->
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </div>
+
+  <main class="main">
+    <!--==================== HOME ====================-->
+    <section class="home" id="home">
+      <div class="home__container container grid">
+        <img src="assets/img/ship2.png" alt="" class="home__img">
+        <div class="home__data">
+
+          <h1 class="home__title">
+            Easily Find and Export <br>Indonesian Products Just <br> in 5 Seconds
+            <a href="#products" class="here">
+              Here
+            </a>
+          </h1>
+
+          <p class="home__description">
+            <!-- <b>NatureExportIndo <br> Sourcing the finest natural products from Indonesia" -->
+            <b>5 Second Export - Makes it easy to export Indonesian products from anywhere</b> <br> <br>
+            <a href="#about" class="button button--flex">
+              Export Now <i class="ri-arrow-right-down-line button__icon"></i>
+            </a>
+        </div>
+        <!-- <div class="home__social">
+          <span class="home__social-follow">Follow Us</span>
+  
+          <div class="home__social-links">
+              <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                  <i class="ri-facebook-fill"></i>
+              </a>
+              <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                  <i class="ri-instagram-line"></i>
+              </a>
+              <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                  <i class="ri-twitter-fill"></i>
+              </a>
+          </div>
+      </div> -->
+      </div>
+    </section>
+
+    <!--==================== ABOUT ====================-->
+    <section class="about section container" id="about">
+      <div class="about__container grid">
+        <div class="about__img">
+          <!-- <h2 class="section__title about__title">
+            Benefits and convenience
+          </h2> <br> -->
+          <img src="assets/img/search.gif" alt="" class="about__img">
+        </div>
+
+        <div class="about__data">
+
+
+          <p class="about__description">
+            <b>FIND PRODUCTS JUST IN 5 SECONDS : </b> <br> <br> Enjoy a sophisticated system that makes it <br> easy to
+            search available products
+
+            <br> <br>
+            <b>NEGOTIABLE PRICE :</b><br><br>
+            We provide price negotiation facilities so that customers can get the best price according to their budget
+            <br> <br>
+            <b>ACCEPTS 40+ CURRENCIES :
+            </b><br><br>
+            Using secure payment methods with facilities in more than 40 currencies with affordable transaction fees
+
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== PRODUCTS ====================-->
+    <section class="section container product" id="products" itemscope itemtype="https://schema.org/Product">
+      <div style="text-align: center;">
+        <h1 style="text-align: center;">FIND INDONESIAN EXPORT PRODUCTS<br>
+          <div class="wavy">
+            JUST IN
+
+            <span style="--i:1">5</span>
+            <span style="--i:2"> </span>
+            <span style="--i:3">S</span>
+            <span style="--i:4">E</span>
+            <span style="--i:5">C</span>
+            <span style="--i:6">O</span>
+            <span style="--i:7">N</span>
+            <span style="--i:8">D</span>
+            <span style="--i:9">S</span>
+            <span style="--i:10">.</span>
+            <span style="--i:11">.</span>
+            <span style="--i:12">.</span>
+          </div> <br>
+          <!-- <img src="./assets/img/sand-timer.gif" alt="" class="sand"> -->
+        </h1>
+        <input type="text" id="myInput" placeholder="Search Product by Name or HS Number . . ." class="form-control"
+          style="text-align: center;">
+      </div> <br>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>HS Number</th>
+              <th>Product Name</th>
+              <th>Category</th>
+            </tr>
+          </thead>
+          <tbody id="myTable">
+            <tr onclick="window.location='https://www.google.com/';">
+              <td data-title="hs-number" itemprop="gtin13">000002</td>
+              <td data-title="product-name" itemprop="name">Areca Betel Nut</td>
+              <td data-title="category" itemprop="description">Palm</td>
+            </tr>
+            <tr>
+              <td data-title="hs-number" itemprop="gtin13">000001</td>
+              <td data-title="product-name" itemprop="name">Areca Betel Nut</td>
+              <td data-title="category" itemprop="description">Palm</td>
+            </tr>
+            <tr>
+              <td data-title="hs-number" itemprop="gtin13">000001</td>
+              <td data-title="product-name" itemprop="name">Areca Betel Nut</td>
+              <td data-title="category" itemprop="description">Palm</td>
+            </tr>
+          </tbody>
+        </table> <br><br>
+        <div style="text-align: center;">
+          Doesn't find what you looking for ? <br>
+        <a href="#contact">Contac Us Instead</a>
+        </div>        
+      </div>
+    </section>
+
+
+    <!--==================== STEPS ====================-->
+    <section class="steps section container">
+      <div class="steps__bg">
+        <h2 class="section__title-center steps__title">
+          Easy To Export
+        </h2>
+
+        <div class="steps__container grid">
+          <div class="steps__card">
+            <div class="steps__card-number">
+              <i class="ri-find-replace-line"></i>
+            </div>
+            <h3 class="steps__card-title">find products</h3>
+            <p class="steps__card-description">
+              select products from Indonesia
+            </p>
+          </div>
+
+          <div class="steps__card">
+            <div class="steps__card-number">
+              <i class="ri-mail-send-fill"></i>
+            </div>
+            <h3 class="steps__card-title">send inquiry</h3>
+            <p class="steps__card-description">
+              write and send your requirements to us
+            </p>
+          </div>
+
+          <div class="steps__card">
+            <div class="steps__card-number">
+              <i class="ri-dropbox-line"></i>
+            </div>
+            <div>
+              <h3 class="steps__card-title">receive</h3>
+              <p class="steps__card-description">
+                receive the package <br> right in your hands
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section container" id="about">
+      <div class="about__container grid">
+        <div class="about__data">
+          <h2 class="section__title about__title">
+            Populer Indonesia Export Products :
+          </h2>
+          <br>
+          <p class="about__description">
+            <b>Indonesia is a major exporter <br> of a variety of fruits and vegetables</b>
+            <br><br>
+            Some of the popular fruits and
+            vegetables exported from Indonesia include: Durian, Mangosteen,
+            Rambutan, Papaya, Banana, Mango, Pineapple, Chilli, Eggplant, Cabbage and others
+            <br> <br>
+            <b> Indonesian spices </b> <br><br> Some of the popular endemic spices found in Indonesia include:
+            candlenut, galangal, clove, ginger, turmeric, pepper, cumin. Natural and authentic taste that makes them a
+            popular choice <br>
+            <br> <br>
+            <b>Indonesia is one of the world's <br> major coffee-producing countries,</b>
+            <br><br>
+            is known for its high-quality
+            Arabica and Robusta coffee beans. Indonesia coffee
+            beans are known for their unique and distinctive flavor profile, making them popular among coffee
+            enthusiasts <br> <br> <br>
+            <b>Indonesia is home to a diverse <br> array of seafood </b>
+            <br><br>
+            Tuna ,
+            Shrimp Crab are popular export from Indonesia, known for their high quality and also known for their sweet
+            and delicate flavor, making them a popular seafood dishes.
+            <br><br>
+            <b>and many thousands of other <br> popular products</b>
+          </p>
+        </div>
+        <div class="about__img" style="text-align: center;">
+          <img src="assets/img/manggis3.jpg" alt="" class="about__img">Mangosteen fruit from Indonesia <br><br>
+          <img src="assets/img/gordon1.png" alt="Gordon Ramsey in Sumatra" class="about__img">Gordon Ramsey Cooks
+          "Rendang"<br><br>
+          <img src="assets/img/Kopi-Indonesia-di-Mata-Dunia.jpg" alt="" class="about__img">World's major
+          coffee-producing<br><br>
+          <img src="assets/img/IKan-copy.jpg" alt="" class="about__img">Home to a diverse of seafood
+          <br>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== QUESTIONS ====================-->
+    <section class="questions section" id="faqs">
+      <h2 class="section__title-center questions__title container">
+        Some common questions <br> were often asked
+      </h2>
+      <div class="questions__container container grid">
+        <div class="questions__group">
+          <div class="questions__item">
+            <header class="questions__header">
+              <i class="ri-add-line questions__icon"></i>
+              <h3 class="questions__item-title">
+                About
+              </h3>
+            </header>
+            <div class="questions__content">
+              <p class="questions__description">
+                5 Seconds Export is an online export company that provides an easy solution for your business to find
+                and export products from Indonesia <br><br>
+
+                With our user-friendly platform, you can easily search and select products that suit your business needs
+                <br><br>
+
+                We offer a wide selection of high quality products from various industrial sectors in Indonesia, from
+                agricultural products, crafts to textiles <br><br>
+
+                5 Seconds Export ensures that every product exported through us meets high quality and safety standards
+              </p>
+            </div>
+          </div>
+
+          <div class="questions__item">
+            <header class="questions__header">
+              <i class="ri-add-line questions__icon"></i>
+              <h3 class="questions__item-title">
+                Services
+              </h3>
+            </header>
+
+            <div class="questions__content">
+              <p class="questions__description">
+                We provide services for our customers to easily find products, especially natural products, in Indonesia
+                for export needs
+                <br><br>
+                We also provide services to help with the certification and delivery of the products you want to export
+              </p>
+            </div>
+          </div>
+          <div class="questions__item">
+            <header class="questions__header">
+              <i class="ri-add-line questions__icon"></i>
+              <h3 class="questions__item-title">
+                Order
+              </h3>
+            </header>
+
+            <div class="questions__content">
+              <p class="questions__description">
+                1. First find the products you want to order <br>
+                2. Secondly send your trade inquiry <br>
+                3. Wait for us to approach you back <br> <br>
+                * Or you can send a message directly to the given contact in contact us
+
+              </p>
+            </div>
+          </div>
+          <div class="questions__item">
+            <header class="questions__header">
+              <i class="ri-add-line questions__icon"></i>
+              <h3 class="questions__item-title">
+                Pricing
+              </h3>
+            </header>
+
+            <div class="questions__content">
+              <p class="questions__description">
+                You can make the first price quote at EXW (Ex Work) Price
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="questions__group">
+
+
+          <div class="questions__item">
+            <header class="questions__header">
+              <i class="ri-add-line questions__icon"></i>
+              <h3 class="questions__item-title">
+                Shipping
+              </h3>
+            </header>
+
+            <div class="questions__content">
+              <p class="questions__description">
+                For some product we accept LCL (Less Than Container Load) shipping terms to make it easier for overseas
+                micro small and
+                medium enterprises (MSMEs) can also get our products
+              </p>
+            </div>
+          </div>
+
+          <div class="questions__item">
+            <header class="questions__header">
+              <i class="ri-add-line questions__icon"></i>
+              <h3 class="questions__item-title">
+                Payment
+              </h3>
+            </header>
+
+            <div class="questions__content">
+              <p class="questions__description">
+                We use a payment method with a minimum <br>advance payment of 10% of the agreed price for the first and
+                balance
+                payment before shipment
+                <br><br>
+                A 10% advance payment that has been given is used as proof of seriousness in the transaction, used for
+                operational activities and cannot be reversed by cancellation of orders by importers
+              </p>
+            </div>
+          </div>
+
+          <div class="questions__item">
+            <header class="questions__header">
+              <i class="ri-add-line questions__icon"></i>
+              <h3 class="questions__item-title">
+                Delivery
+              </h3>
+            </header>
+
+            <div class="questions__content">
+              <p class="questions__description">
+                There are several shipping points because Indonesia has 5 big islands, but we often ship through the
+                ports of
+                <a href="https://goo.gl/maps/4FLPiJETtsyYYbNU9" class="aa">
+                  <u>Tanjung Priok Jakarta</u>
+                </a>
+                for products located in the western
+                and
+                <a href="https://goo.gl/maps/baARY7TCpKoXYv4r9" class="aa">
+                  <u>Tanjung Perak Surabaya</u>
+                </a>
+                for the eastern part of Indonesia
+              </p>
+            </div>
+          </div>
+
+          <div class="questions__item">
+            <header class="questions__header">
+              <i class="ri-add-line questions__icon"></i>
+              <h3 class="questions__item-title">
+                Terms and Conditions
+              </h3>
+            </header>
+
+            <div class="questions__content">
+              <p class="questions__description">
+                <!-- Add terms and conditions here -->
+                1. The exporter agrees to supply goods to the importer as per the agreed specifications and quantities.
+                <br><br>
+                2. The importer agrees to make payment for the goods within 30 days of receipt of the invoice. <br><br>
+                3. The exporter is responsible for the timely delivery of the goods to the importer's designated
+                location.
+                <br><br>
+                4. The importer is responsible for the inspection and acceptance of the goods upon delivery. <br><br>
+                5. Any disputes arising from this agreement will be resolved through arbitration in accordance with the
+                rules of the International Chamber of Commerce.
+              </p>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== CONTACT ====================-->
+    <section class="contact section container" id="contact">
+      <div class="contact__container grid">
+        <div class="contact__box">
+          <h3>Send Inquiry or become supplier ?</h3>
+          <h2 class="section__title"> Send your message or <br> inquiry via following :
+          </h2>
+          <div class="contact__data">
+            <div class="contact__information">
+              <!-- <h3 class="contact__subtitle">WhatsApp Message</h3> -->
+              <span class="contact__description">
+                <button class="button button--flex" type="submit">
+                  <i class="ri-whatsapp-line contact__icon"></i>
+                  <a href="https://wa.me/+6285155032886?text=message_text" style="color: hsl(var(--hue), 4%, 35%)">
+                  </a>+62 851
+                  550 32 886
+                  <i class="ri-arrow-right-up-line button__icon"></i>
+                </button>
+              </span> <br><br>
+              Contact Person : Mr. Yogo Adi
+            </div>
+            <img src="./assets/img/faq1.gif" alt="" class="faq__img">
+          </div>
+        </div>
+
+        <form action="https://formsubmit.co/adiyogo3@gmail.com" method="POST" class="contact__form">
+
+          <h3 class="contact__subtitle">Form Submit</h3>
+          <div class="contact__inputs">
+            <input type="hidden" name="_subject" value="NatureExportIndo!">
+            <div class="contact__content">
+              <input type="text" placeholder=" " class="contact__input" name="name" required>
+              <label for="" class="contact__label">Name : Mr. Jhon from USA</label>
+            </div>
+
+            <div class="contact__content">
+              <input type="tel" id="phone" name="phone" placeholder=" " pattern="[+]\d{2}[\d\s]{9,15}" required
+                class="contact__input">
+
+              <label for="phone" class="contact__label">WhatsApp Number : +6285155032886</label>
+
+            </div>
+
+            <div class="contact__content contact__area">
+              <textarea name="message" placeholder=" " class="contact__input" required></textarea>
+              <label for="" class="contact__label">Message / Inquiry : Hello 5 Second Export !</label>
+            </div>
+
+            <input type="file" name="attachment" accept="image/png, image/jpeg, application/pdf">
+          </div>
+
+
+          <button class="button button--flex" type="submit">
+            Send Inquiry
+            <i class="ri-arrow-right-up-line button__icon"></i>
+          </button>
+        </form>
+      </div> <br>
+    </section>
+  </main>
+
+  <!--==================== Footer ====================-->
+  <div class="footer">
+    <div class="box-1">
+      <div>
+        Currncy we receive
+      </div>
+      <iframe src="./assets/img/wise2.png" width="500" height="300"></iframe>
+      <br>
+    </div>
+    <div class="box-2">
+      <iframe class="peta"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0554864557466!2d106.8620868!3d-6.2564211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3aad90b9947%3A0xa4bce24fda2d6540!2sJl.%20Taman%20Harapan%2C%20RW.3%2C%20Cawang%2C%20Kec.%20Kramat%20jati%2C%20Kota%20Jakarta%20Timur%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2013630!5e0!3m2!1sen!2sid!4v1675139927495!5m2!1sen!2sid"
+        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+  </div>
+  <p class="footer__copy">&#169;2023 5 Second Export. All rigths reserved</p>
+
+  <!--=============== SCROLL UP ===============-->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-fill scrollup__icon"></i>
+  </a>
+
+  <!--=============== SCROLL REVEAL ===============-->
+  <script src="assets/js/scrollreveal.min.js"></script>
+
+  <!--=============== MAIN JS ===============-->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/popup.js"></script>
+</body>
+
+</html>
