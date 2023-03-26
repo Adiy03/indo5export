@@ -1245,11 +1245,13 @@ find agricultural products, make inquiry, receive. */
   text-align: center;
   row-gap: 1rem;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .box-2 {
   float: right;
   width: 50%;
+  overflow: hidden;
 }
 
 .peta {
