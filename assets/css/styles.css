@@ -315,6 +315,7 @@ the website, in dark theme
 /*=============== HOME ===============*/
 .home {
   padding: 3.5rem 0 2rem;
+  /* background-color: aliceblue; */
 }
 
 .home__container {
@@ -979,6 +980,7 @@ the website, in dark theme
 @media screen and (min-width: 767px) {
   body {
     margin: 0;
+    /* background-color: aliceblue; */
   }
 
   .nav {
@@ -1323,10 +1325,9 @@ find agricultural products, make inquiry, receive. */
 
 .slider {
   max-width: 400px;
-  height: auto;
   border-radius: 10px;
   overflow: hidden;
-
+  height: 50vh;
 }
 
 .slides {
@@ -1341,6 +1342,7 @@ find agricultural products, make inquiry, receive. */
 
 .slide {
   width: 20%;
+
   transition: 2s;
 }
 
@@ -1550,4 +1552,18 @@ table td{
 
 .faq__img{
   width: 200px;
+}
+
+.top-header{
+  text-align: right;
+  background-color: var(--first-color);
+  height: 30px;
+  color: #FFF;
+  padding: 10px;
+}
+
+.top-header span{
+  justify-content: center;
+  /* margin-right: 5%;
+  padding-top: 5px; */
 }
