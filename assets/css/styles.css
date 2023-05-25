@@ -706,6 +706,9 @@ the website, in dark theme
 /*=============== CONTACT ===============*/
 .contact__container {
   row-gap: 3.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .contact__data {
